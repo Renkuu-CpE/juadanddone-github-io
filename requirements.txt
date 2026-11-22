@@ -1,0 +1,4 @@
+# Juan and Done needs only Streamlit (everything else is the Python standard library).
+# Bounded so a future Streamlit 2.x cannot silently break the custom styling.
+# The lower bound is a release that has every feature the app uses (keyed containers, popovers, empty selectboxes).
+streamlit>=1.42,<2.0
