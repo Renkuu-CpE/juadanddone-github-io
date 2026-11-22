@@ -356,4 +356,63 @@ font-family:var(--jad-display);font-size:14px;color:var(--jad-ink);}
   .jad-check-head,.jad-result,.jad-detail-head,.jad-panel,.jad-card{box-shadow:none!important;}
   div[class*="st-key-jadrow-"]{break-inside:avoid;}
 }
+
+/* =========================================
+   FORCE LIGHT MODE - SEARCH & SUGGESTIONS
+========================================= */
+
+:root,
+html,
+body,
+.stApp {
+    color-scheme: light !important;
+}
+
+/* SEARCH INPUT */
+.stApp [data-testid="stTextInput"] div[data-baseweb="input"],
+.stApp [data-testid="stTextInput"] div[data-baseweb="base-input"] {
+    background: #FFFBF2 !important;
+    background-color: #FFFBF2 !important;
+    border-color: #1F1A14 !important;
+}
+
+.stApp [data-testid="stTextInput"] input {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #1F1A14 !important;
+    -webkit-text-fill-color: #1F1A14 !important;
+    color-scheme: light !important;
+}
+
+.stApp [data-testid="stTextInput"] input::placeholder {
+    color: #8A8178 !important;
+    -webkit-text-fill-color: #8A8178 !important;
+    opacity: 1 !important;
+}
+
+/* LIVE SUGGESTIONS SELECTBOX */
+.stApp [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background: #FFFBF2 !important;
+    background-color: #FFFBF2 !important;
+    color: #1F1A14 !important;
+    border-color: #1F1A14 !important;
+    color-scheme: light !important;
+}
+
+/* SELECTBOX TEXT */
+.stApp [data-testid="stSelectbox"] input {
+    color: #1F1A14 !important;
+    -webkit-text-fill-color: #1F1A14 !important;
+    color-scheme: light !important;
+}
+
+/* DROPDOWN MENU */
+.stApp [data-baseweb="popover"],
+.stApp [data-baseweb="menu"],
+.stApp [role="listbox"],
+.stApp [role="option"] {
+    background-color: #FFFBF2 !important;
+    color: #1F1A14 !important;
+}
+
 """
