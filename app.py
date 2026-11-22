@@ -50,7 +50,6 @@ def load_documents_once(file_path, modified_time):
     return data_functions.load_documents(file_path)
 
 
-@st.cache_data(show_spinner=False)
 def make_css_once():
     """Build the CSS once and remember it."""
     return style.make_page_css()
